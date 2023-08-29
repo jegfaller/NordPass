@@ -4,7 +4,7 @@ import {HeaderTextEnum} from "../constants/header-text.enum.ts";
 
 const homePage = new HeroHomepage()
 
-describe('Login page', () => {
+describe('Personal plan', () => {
     before(async () => {
         await browser.reloadSession();
     });
@@ -13,7 +13,7 @@ describe('Login page', () => {
         await browser.deleteCookies();
     });
 
-    it('All elements are displayed', async () => {
+    it('Check plans', async () => {
 
         await homePage.open();
         await homePage.clickCheckPlansButton()
